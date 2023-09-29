@@ -10,16 +10,12 @@ export default function Card(props) {
       <div className="card1-section">
         {(badgeText = true && <div className="card-badge">{badgeText}</div>)}
         <img
-          src={`src/assets/${props.data.coverImg}`}
+          src={`/${props.data.coverImg}`}
           className="card1-img"
           alt="card1"
         />
         <div className="info1">
-          <img
-            src="src/assets/Star1.png"
-            className="star-icon"
-            alt="star-icon"
-          />
+          <img src="/Star1.png" className="star-icon" alt="star-icon" />
           <p className="rate1">{props.data.stats.rating}</p>
           <p className="review1">({props.data.stats.reviewCount})</p>
           <p className="country1">{" " + "•" + " " + props.data.location}</p>
